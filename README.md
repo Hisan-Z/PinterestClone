@@ -1,3 +1,5 @@
-# Basic Example
+# Pinterest Clone
 
-A simple [create-react-app](CRA-README.md) setup, showcasing one of the lastest React-Bootstrap components!
+A Pinterest clone made with MERN Stack.
+It uses the MongoDB Atlas and React Bootstrap and various other libraries for the frontend
+

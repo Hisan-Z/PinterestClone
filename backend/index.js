@@ -11,10 +11,10 @@ const likeRoutes=require('./routes/Like')
 
 const app = express()
 
-// app.use(cors({
-//     origin:"*",
-//     methods:["GET","POST","DELETE","PUT"],
-// }))
+app.use(cors({
+    origin:["https://pinterest-clone-sooty-theta.vercel.app"],
+    methods:["GET","POST","DELETE","PUT"]
+}))
 app.use(bodyParser.json());
 app.use('/api/user', userRoutes)
 app.use('/api/pins', pinRoutes)

@@ -12,7 +12,7 @@ const likeRoutes=require('./routes/Like')
 const app = express()
 
 app.use(cors({
-    origin:["https://pinterest-clone-62kplh8zx-hisan-zs-projects.vercel.app","https://pinterest-clone-hisan-zs-projects.vercel.app"],
+    origin:["*"],
     methods:["GET","POST","DELETE","PUT"],
     credentials:true
 }))

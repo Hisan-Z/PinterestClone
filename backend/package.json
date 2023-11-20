@@ -17,13 +17,8 @@
     "components": "0.1.0",
     "crypto": "^1.0.1",
     "crypto-browserify": "3.12.0",
-<<<<<<< HEAD
-    "dotenv": "16.3.1",
-    "emoji-picker-react": "^4.5.15",
-=======
     "dotenv": "16.0.3",
     "emoji-picker-react": "^4.5.2",
->>>>>>> ce23b13dd4e3446f91c2e8679b563a9d95b3cc1f
     "express": "^4.18.2",
     "fs": "^0.0.1-security",
     "fs.realpath": "1.0.0",

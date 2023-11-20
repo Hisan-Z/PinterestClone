@@ -1,3 +1,6 @@
+import dotenv from "dotenv"
+
+dotenv.config()
 
 export const SERVER_USER_URL = process.env.BASE_URL + '/user'
 export const SERVER_PIN_URL = process.env.BASE_URL + '/pins'

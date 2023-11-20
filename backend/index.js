@@ -11,7 +11,11 @@ const likeRoutes=require('./routes/Like')
 
 const app = express()
 
-app.use(cors())
+app.use(cors({
+    origin:["https://pinterest-clone-62kplh8zx-hisan-zs-projects.vercel.app/"],
+    methods:["GET","POST","DELETE","PUT"],
+    credentials:true
+}))
 app.use(bodyParser.json());
 app.use('/api/user', userRoutes)
 app.use('/api/pins', pinRoutes)

@@ -13,8 +13,9 @@ const Pinboard = () => {
   const {data,setData}=useFetch(`${SERVER_PIN_URL}/unauth/slideshow`)
   const boardIndex = useContext(UserContext);
   //data is like such  {travel: Array(12), fashion: Array(11), food: Array(3)}
-  
+  console.log(SERVER_PIN_URL)
   const boardData = data && data[Object.keys(data)[boardIndex]];
+  console.log(boardData)
   return (
     <>
     <div style={{position:"relative",zIndex:0,marginInlineStart:"2.8rem"}} className="slideshow" id="slideshow" >

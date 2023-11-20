@@ -12,9 +12,8 @@ const likeRoutes=require('./routes/Like')
 const app = express()
 
 app.use(cors({
-    origin:["*"],
+    origin:"*",
     methods:["GET","POST","DELETE","PUT"],
-    credentials:true
 }))
 app.use(bodyParser.json());
 app.use('/api/user', userRoutes)

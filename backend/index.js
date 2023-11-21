@@ -10,22 +10,18 @@ const commentRoutes= require('./routes/Comment')
 const likeRoutes=require('./routes/Like')
 
 const app = express()
-
 app.options('*', cors())
-app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.header(
-      "Access-Control-Allow-Headers",
-      "Origin, X-Requested-With, Content-Type, Accept"
-    );    
-    next();
-  });
+
 app.use(bodyParser.json());
 app.use('/api/user', userRoutes)
 app.use('/api/pins', pinRoutes)
 app.use('/api/comment',commentRoutes )
 app.use('/api/like',likeRoutes)
 
+app.use(cors({
+    "origin":"*",
+    methods:["GET","POST","PUT","DELETE"]
+}))
 app.get('/', (req, res) => {
     res.send('<h1> Pinterest clone backend is up and running!</h1>')
 })

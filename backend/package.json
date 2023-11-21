@@ -73,7 +73,7 @@
   "description": "",
   "devDependencies": {
     "buffer": "^6.0.3",
-    "cors": "2.8.5",
+    "cors": "^2.8.5",
     "path": "0.12.7",
     "process": "^0.11.10",
     "stream": "0.0.2",

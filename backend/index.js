@@ -11,11 +11,7 @@ const likeRoutes=require('./routes/Like')
 
 const app = express()
 
-app.use(cors({
-    origin:["https://pinterest-clone-sooty-theta.vercel.app"],
-    methods:["GET","POST","DELETE","PUT"],
-    credentials:true
-}))
+
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.header(

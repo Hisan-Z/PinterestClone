@@ -8,7 +8,6 @@
     "@fortawesome/free-solid-svg-icons": "6.4.2",
     "@fortawesome/react-fontawesome": "0.2.0",
     "@fullpage/react-fullpage": "^0.1.40",
-    "@torc/react-fullscreen-scroller": "^1.0.4",
     "axios": "1.6.2",
     "bcryptjs": "2.4.3",
     "bootstrap": "^5.3.2",
@@ -73,7 +72,7 @@
   "description": "",
   "devDependencies": {
     "buffer": "^6.0.3",
-    "cors": "^2.8.5",
+    "cors": "2.8.5",
     "path": "0.12.7",
     "process": "^0.11.10",
     "stream": "0.0.2",

@@ -16,7 +16,8 @@
                 "PUT",
                 "DELETE",
                 "PATCH",
-                "OPTIONS"
+                "OPTIONS"  
+                
             ],
             "headers": {
                 "Access-Control-Allow-Origin": "*" 
